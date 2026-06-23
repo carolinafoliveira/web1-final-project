@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Documento segue padrão HTML5 -->
+<html lang="pt-BR"> <!-- Idioma definido como português do Brasil -->
+<head>
+  <meta charset="UTF-8"> <!-- Permite acentos e caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsivo -->
+  <title>Guia do IF - Professores</title> <!-- Título da aba -->
+  <link rel="stylesheet" href="styles.css"> <!-- Conecta CSS -->
+</head>
+
+<body>
+  <!-- Cabeçalho fixo com título e menu -->
+  <header>
+    <div class="container">
+      <h1>Guia do IF</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index2.html">Calendário</a></li>
+          <li><a href="index3.html" class="ativo">Professores</a></li> <!-- Página atual -->
+          <li><a href="index4.html">Biblioteca</a></li>
+          <li><a href="index5.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <div class="container">
+      <!-- Seção de introdução -->
+      <section>
+        <h2>Professores do Curso</h2>
+        <article>
+          <h2><strong>Conheça os professores que você terá durante o curso.</strong></h2>
+          <h3>Clique na foto do professor para acessar o currículo Lattes e conhecer melhor sua formação e experiência.</h3>
+          <!-- Links úteis -->
+          <a href="https://lattes.cnpq.br/3346873113410420" class="botao" target="_blank">Currículo Lattes</a>
+          <a href="https://www.ifspcjo.edu.br" class="botao-secundario">Site Oficial</a>
+        </article>
+      </section>
+
+      <!-- Seção com grid de professores -->
+      <section>
+        <div class="grid-3">
+          <!-- Card de professor -->
+          <div class="professor">
+            <a href="http://lattes.cnpq.br/3346873113410420" target="_blank">
+              <img src="alisson.jpeg" alt="Foto do professor Alisson Ribeiro">
+            </a>
+            <h3>Alisson Ribeiro</h3>
+            <p><strong>Disciplina:</strong> WEB 1</p>
+            <p><strong>Área:</strong> Desenvolvimento Web</p>
+            <p><a href="mailto:alissonribeiro@ifsp.edu.br">alissonribeiro@ifsp.edu.br</a></p>
+          </div>
+
+          <!-- Outros professores seguem o mesmo padrão -->
+          <div class="professor">
+            <a href="http://lattes.cnpq.br/2831040847816293" target="_blank">
+              <img src="paulo.jpeg" alt="Foto do professor Paulo Zeferino">
+            </a>
+            <h3>Paulo Zeferino</h3>
+            <p><strong>Disciplina:</strong> BDD 1</p>
+            <p><strong>Área:</strong> Banco de Dados</p>
+            <p><a href="mailto:paulogiovani@ifsp.edu.br">paulogiovani@ifsp.edu.br</a></p>
+          </div>
+
+          <!-- Exemplo de mais um professor -->
+          <div class="professor">
+            <a href="http://lattes.cnpq.br/8184615061457853" target="_blank">
+              <img src="manzano.jpeg" alt="Foto do professor Augusto Manzano">
+            </a>
+            <h3>Augusto Manzano</h3>
+            <p><strong>Disciplina:</strong> Algoritmos</p>
+            <p><strong>Área:</strong> Programação</p>
+            <p><a href="mailto:augusto.garcia@ifsp.edu.br">augusto.garcia@ifsp.edu.br</a></p>
+          </div>
+
+          <!-- ... demais professores seguem o mesmo padrão -->
+        </div>
+      </section>
+
+      <!-- Seção de informações adicionais -->
+      <section>
+        <article>
+          <h2>Informações importantes</h2>
+          <span>Se você tem dúvidas sobre os professores, seus horários de atendimento ou como entrar em contato, procure a coordenação do curso ou envie um e-mail para o professor.</span>
+        </article>
+      </section>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Guia do IF. Professores do curso.</p>
+    </div>
+  </footer>
+
+  <!-- Plugin VLibras para acessibilidade -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div vw-plugin-top-wrapper></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app"); <!-- Inicializa VLibras -->
+  </script>
+</body>
+</html>
