@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!-- Define que o documento segue o padrão HTML5 -->
+<html lang="pt-BR"> <!-- Define o idioma da página como português do Brasil -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Permite usar acentos e caracteres especiais -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Torna a página responsiva -->
+  <title>Guia do IF - Página Inicial</title> <!-- Título que aparece na aba do navegador -->
+  <link rel="stylesheet" href="styles.css"> <!-- Conecta o arquivo CSS externo -->
+</head>
+
+<body>
+  <!-- Cabeçalho fixo com título e menu -->
+  <header>
+    <div class="container">
+      <h1>Guia do IF</h1> <!-- Título principal -->
+      <nav>
+        <ul>
+          <!-- Menu de navegação -->
+          <li><a href="index1.html" class="ativo">Início</a></li> <!-- Link ativo -->
+          <li><a href="index2.html">Calendário</a></li>
+          <li><a href="index3.html">Professores</a></li>
+          <li><a href="index4.html">Biblioteca</a></li>
+          <li><a href="index5.html">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <div class="container">
+      <!-- Seção de boas-vindas -->
+      <section class="boas-vindas">
+        <div>
+          <h2>Bem-vindo ao IFSP-CJO</h2>
+          <p class="texto-destaque">Comece sua vida acadêmica com acesso rápido...</p>
+          <p>Este guia reúne atalhos úteis...</p>
+        </div>
+        <div class="acoes-boas-vindas">
+          <a href="index2.html" class="botao">Ver Calendário</a>
+          <a href="https://www.ifspcjo.edu.br/ultimas-noticias" class="botao-secundario" target="_blank" rel="noopener">Últimas Notícias</a>
+        </div>
+      </section>
+
+      <!-- Seção de busca -->
+      <section>
+        <article class="busca-site-card">
+          <div>
+            <h2>Encontre rápido</h2>
+            <p>Pesquise por calendário, professores, biblioteca...</p>
+          </div>
+          <div class="area-busca">
+            <label for="busca-site">Buscar no Guia do IF</label>
+            <input type="search" id="busca-site" placeholder="Digite o que você procura...">
+            <div id="resultados-busca" class="resultados-busca" aria-live="polite">
+              <p class="mensagem-busca">Digite uma palavra para ver sugestões.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Seção de atalhos principais -->
+      <section>
+        <h2>O que você encontra aqui</h2>
+        <div class="grid-3">
+          <article>
+            <h3>Calendário</h3>
+            <p>Confira os horários das aulas...</p>
+            <a href="index2.html" class="botao">Acessar</a>
+          </article>
+          <article>
+            <h3>Professores</h3>
+            <p>Conheça os professores...</p>
+            <a href="index3.html" class="botao">Acessar</a>
+          </article>
+          <article>
+            <h3>Biblioteca</h3>
+            <p>Descubra como usar a biblioteca...</p>
+            <a href="index4.html" class="botao">Acessar</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- Seção de dúvidas -->
+      <section>
+        <h2>Dúvidas?</h2>
+        <p>Se você tem alguma pergunta...</p>
+        <a href="index5.html" class="botao">Ver FAQ</a>
+        <a href="index5.html#formulario" class="botao-secundario">Enviar Dúvida</a>
+      </section>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Guia do IF. Projeto para apoiar estudantes do IFSP.</p>
+    </div>
+  </footer>
+
+  <!-- Plugin VLibras para acessibilidade -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div vw-plugin-top-wrapper></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="busca.js"></script> <!-- Script da busca interna -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script> <!-- Script do VLibras -->
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app"); <!-- Inicializa o VLibras -->
+  </script>
+</body>
+</html>
