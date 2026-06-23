@@ -1,0 +1,223 @@
+/* Reset padrão: remove margens e espaçamentos dos navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* largura/altura incluem borda e padding */
+}
+
+/* Importa fontes do Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif; /* Fonte principal */
+  background-color: #f5f5f5; /* Fundo claro */
+  line-height: 1.5; /* Espaçamento entre linhas */
+  color: #333; /* Cor padrão do texto */
+  padding-top: 155px; /* Espaço para não ficar atrás do cabeçalho fixo */
+}
+
+.container {
+  max-width: 1000px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza */
+  padding: 0 20px; /* Espaço lateral */
+}
+
+/* Cabeçalho fixo */
+header {
+  background-color: #1f5c3f; /* Verde institucional */
+  color: white;
+  padding: 20px 0;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra */
+  position: fixed; /* Fixa no topo */
+  top: 0; left: 0; right: 0;
+  z-index: 1000; /* Fica acima dos outros elementos */
+}
+
+header h1 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none; /* Remove bolinhas */
+  display: flex; /* Layout horizontal */
+  gap: 15px; /* Espaço entre links */
+  flex-wrap: wrap; /* Quebra linha se necessário */
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s; /* Efeito hover */
+}
+
+nav a:hover,
+nav a.ativo {
+  background-color: #0d3d25; /* Verde mais escuro */
+}
+
+/* Seções */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  color: #1f5c3f;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #1f5c3f; /* Linha verde abaixo */
+  padding-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 15px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Boas-vindas */
+.boas-vindas {
+  background-image: linear-gradient(rgba(13,61,37,0.82), rgba(13,61,37,0.78)), url("campus-ifsp-cjo.jpg");
+  background-position: center;
+  background-size: cover;
+  border-left: 6px solid #1f5c3f;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 28px;
+}
+
+.boas-vindas h2 {
+  color: white;
+  font-size: 30px;
+}
+
+.boas-vindas p {
+  color: white;
+}
+
+/* Botões */
+.botao {
+  background-color: #1f5c3f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background-color: #0d3d25;
+}
+
+.botao-secundario {
+  background-color: #ddd;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.botao-secundario:hover {
+  background-color: #bbb;
+}
+
+/* Professores */
+.professor {
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.professor img {
+  width: 120px; height: 120px;
+  border-radius: 50%; /* Foto circular */
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #1f5c3f; /* Borda verde */
+}
+
+/* Livros */
+.livro-card img {
+  width: 150px; height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.18); /* Sombra */
+}
+
+/* Formulário */
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #1f5c3f; /* Verde no foco */
+  box-shadow: 0 0 5px rgba(31,92,63,0.3);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+table th {
+  background-color: #1f5c3f;
+  color: white;
+  padding: 12px;
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+  background-color: #f9f9f9; /* Destaque ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+  background-color: #1f5c3f;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Responsividade (celulares) */
+@media (max-width: 768px) {
+  body { padding-top: 140px; }
+  header h1 { font-size: 20px; }
+  nav ul { gap: 5px; justify-content: center; }
+  nav a { font-size: 13px; }
+  .grid-2, .grid-3 { grid-template-columns: 1fr; } /* Grids viram colunas únicas */
+  .boas-vindas, .biblioteca-destaque { flex-direction: column; }
+}
